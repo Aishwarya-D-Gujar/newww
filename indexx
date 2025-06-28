@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics Masterclass</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+        .material-shadow {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+        .material-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+        .material-button:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+            transform: translateY(-2px);
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #4c51bf, #6b46c1); /* Deep blue to deep purple */
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #4c51bf, #6b46c1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white material-shadow py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center flex-wrap">
+            <a href="#" class="text-2xl font-bold text-gradient">Data Analytics Masterclass</a>
+            <div class="block lg:hidden">
+                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-indigo-500 border-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+            <div id="nav-content" class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0">
+                <ul class="text-lg lg:flex justify-end flex-1 items-center">
+                    <li class="lg:mr-6 mb-4 lg:mb-0"><a href="#hero" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Home</a></li>
+                    <li class="lg:mr-6 mb-4 lg:mb-0"><a href="#features" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Features</a></li>
+                    <li class="lg:mr-6 mb-4 lg:mb-0"><a href="#curriculum" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Curriculum</a></li>
+                    <li class="lg:mr-6 mb-4 lg:mb-0"><a href="#testimonials" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Testimonials</a></li>
+                    <li><a href="#enroll" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-full material-button">Enroll Now</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="gradient-bg text-white py-20 md:py-32 px-6 rounded-b-lg mb-12">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">Unlock the Power of Data.</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 opacity-90">
+                    Master essential data analytics tools and techniques to transform raw data into actionable insights.
+                    Your journey to a data-driven career starts here.
+                </p>
+                <a href="#enroll" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full text-lg material-button hover:bg-gray-100">
+                    Get Started Today
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="container mx-auto py-16 px-6 md:px-10">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Why Choose Our Course?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl material-shadow text-center">
+                    <div class="mb-4 text-indigo-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Hands-on Projects</h3>
+                    <p class="text-gray-600">Build a robust portfolio with real-world data analysis projects and case studies.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl material-shadow text-center">
+                    <div class="mb-4 text-indigo-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Expert Instructors</h3>
+                    <p class="text-gray-600">Learn from industry veterans with years of practical experience in data analytics.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl material-shadow text-center">
+                    <div class="mb-4 text-indigo-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="12" x2="12" y2="12"></line><line x1="8" y1="12" x2="8" y2="12"></line><line x1="16" y1="12" x2="16" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Career Support</h3>
+                    <p class="text-gray-600">Get assistance with resume building, interview prep, and job placement opportunities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section -->
+        <section id="curriculum" class="bg-white py-16 px-6 md:px-10 rounded-xl material-shadow mx-auto max-w-6xl mb-12">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Our Comprehensive Curriculum</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-3 text-indigo-700">Module 1: Foundations of Data Analytics</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Introduction to Data Science & Analytics</li>
+                        <li>Statistical Concepts for Data Analysis</li>
+                        <li>Data Collection and Cleaning Techniques</li>
+                        <li>Introduction to SQL for Data Querying</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-3 text-indigo-700">Module 2: Programming for Data</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Python for Data Analysis (Pandas, NumPy)</li>
+                        <li>Data Visualization with Matplotlib & Seaborn</li>
+                        <li>Advanced SQL for Database Management</li>
+                        <li>Introduction to R (Optional)</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-3 text-indigo-700">Module 3: Advanced Analytics & Tools</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Exploratory Data Analysis (EDA)</li>
+                        <li>Machine Learning Fundamentals for Analytics</li>
+                        <li>Business Intelligence Tools (Tableau/Power BI)</li>
+                        <li>Cloud Platforms for Data (AWS/Azure/GCP Basics)</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-3 text-indigo-700">Module 4: Capstone Project & Career Prep</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>End-to-End Capstone Project</li>
+                        <li>Data Storytelling and Presentation</li>
+                        <li>Resume Building & Interview Preparation</li>
+                        <li>Networking Strategies in Data Industry</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 px-6 md:px-10">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">What Our Students Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-xl material-shadow">
+                    <p class="text-gray-700 italic mb-4">"This course transformed my understanding of data. The practical approach and supportive instructors made all the difference. Highly recommend!"</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50/A78BFA/ffffff?text=JD" alt="John Doe" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <p class="font-semibold text-gray-900">Jane Doe</p>
+                            <p class="text-sm text-gray-500">Data Analyst at TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-xl material-shadow">
+                    <p class="text-gray-700 italic mb-4">"The curriculum is incredibly comprehensive, covering everything from SQL to machine learning basics. I feel much more confident in my data skills now."</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50/60A5FA/ffffff?text=MS" alt="Michael Smith" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <p class="font-semibold text-gray-900">Michael Smith</p>
+                            <p class="text-sm text-gray-500">Business Intelligence Analyst</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-xl material-shadow">
+                    <p class="text-gray-700 italic mb-4">"The career support was invaluable. I landed my dream job shortly after completing the course, thanks to their guidance and network."</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/50x50/F87171/ffffff?text=AL" alt="Anna Lee" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <p class="font-semibold text-gray-900">Anna Lee</p>
+                            <p class="text-sm text-gray-500">Junior Data Scientist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Enrollment Section -->
+        <section id="enroll" class="gradient-bg text-white py-20 px-6 rounded-xl material-shadow mx-auto max-w-6xl text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Start Your Data Journey?</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 opacity-90">
+                Enroll in the Data Analytics Masterclass today and gain the skills demanded by top companies.
+                Limited spots available!
+            </p>
+            <a href="#" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full text-lg material-button hover:bg-gray-100">
+                Secure Your Spot Now!
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 px-6 md:px-10 rounded-t-lg">
+        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-xl font-bold mb-2">Data Analytics Masterclass</h3>
+                <p class="text-gray-400">&copy; 2025 All rights reserved.</p>
+            </div>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile navigation
+        const navToggle = document.getElementById('nav-toggle');
+        const navContent = document.getElementById('nav-content');
+
+        navToggle.addEventListener('click', function() {
+            navContent.classList.toggle('hidden');
+        });
+
+        // Close mobile nav when a link is clicked (optional)
+        const navLinks = navContent.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!navContent.classList.contains('hidden') && window.innerWidth < 1024) { // 1024px is Tailwind's 'lg' breakpoint
+                    navContent.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
